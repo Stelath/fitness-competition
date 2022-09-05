@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9BA4C9028C6730500198755 /* Pods_StepTrackerCompetition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9BA4C8F28C6730500198755 /* Pods_StepTrackerCompetition.framework */; };
+		FA0151BA21F931AA008D0D3F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0151B921F931A9008D0D3F /* Constants.swift */; };
+		FA06153121D797E300FD89A8 /* TutorialCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06153021D797E300FD89A8 /* TutorialCollectionViewController.swift */; };
+		FA06153321D7EC7000FD89A8 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06153221D7EC7000FD89A8 /* PageCell.swift */; };
+		FA06153521D7F78E00FD89A8 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06153421D7F78E00FD89A8 /* Page.swift */; };
+		FA69CA5321F50BF500444352 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69CA5221F50BF500444352 /* SignInViewController.swift */; };
+		FA69CA5521F50F9B00444352 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69CA5421F50F9B00444352 /* SettingsViewController.swift */; };
+		FA69CA5721F5182E00444352 /* SetAvatarImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69CA5621F5182E00444352 /* SetAvatarImageViewController.swift */; };
+		FAD259E721E17D2F0036DBEA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAD259E621E17D2F0036DBEA /* GoogleService-Info.plist */; };
+		FAE6D2E421EB8990007188A4 /* SignUpWithMailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6D2E321EB8990007188A4 /* SignUpWithMailViewController.swift */; };
+		FAE6D2E621EE14D7007188A4 /* HealthDataProviderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6D2E521EE14D7007188A4 /* HealthDataProviderViewController.swift */; };
+		FAE6D2EB21F00024007188A4 /* TopFitnessLeaderboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6D2E921F00024007188A4 /* TopFitnessLeaderboardCell.swift */; };
+		FAE6D2EC21F00024007188A4 /* TopFitnessLeaderboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE6D2EA21F00024007188A4 /* TopFitnessLeaderboardCell.xib */; };
+		FAE6D2EE21F00208007188A4 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6D2ED21F00208007188A4 /* LeaderboardViewController.swift */; };
+		FAECE1CF21F3F3E400DF7559 /* FirebaseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAECE1CE21F3F3E400DF7559 /* FirebaseDelegate.swift */; };
+		FAECE1D121F401E200DF7559 /* StepDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAECE1D021F401E200DF7559 /* StepDataModel.swift */; };
+		FAF8A8B621D567250070C191 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8A8B521D567250070C191 /* AppDelegate.swift */; };
+		FAF8A8B821D567250070C191 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8A8B721D567250070C191 /* ViewController.swift */; };
+		FAF8A8BB21D567250070C191 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF8A8B921D567250070C191 /* Main.storyboard */; };
+		FAF8A8BD21D567260070C191 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF8A8BC21D567260070C191 /* Assets.xcassets */; };
+		FAF8A8C021D567260070C191 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF8A8BE21D567260070C191 /* LaunchScreen.storyboard */; };
+		FAF8A8C821D56D180070C191 /* HealthKitDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF8A8C721D56D180070C191 /* HealthKitDelegate.swift */; };
+		FAF8A8CF21D56F7E0070C191 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF8A8CE21D56F7E0070C191 /* HealthKit.framework */; };
+		FAFFC1A221F2859B005B7E42 /* FitnessLeaderboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFC1A021F2859B005B7E42 /* FitnessLeaderboardCell.swift */; };
+		FAFFC1A321F2859B005B7E42 /* FitnessLeaderboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAFFC1A121F2859B005B7E42 /* FitnessLeaderboardCell.xib */; };
+		FAFFC1A521F2C1BC005B7E42 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFC1A421F2C1BC005B7E42 /* SignupViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1366E0CC86B31C76FDBAFCCA /* Pods_StepTrackerCompetition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StepTrackerCompetition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80C7AFEED2541E4EE57AF6FB /* Pods-StepTrackerCompetition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepTrackerCompetition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StepTrackerCompetition/Pods-StepTrackerCompetition.debug.xcconfig"; sourceTree = "<group>"; };
+		D9BA4C8428C6726F00198755 /* Pods_StepTrackerCompetition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_StepTrackerCompetition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9BA4C8828C6727F00198755 /* Pods_StepTrackerCompetition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_StepTrackerCompetition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9BA4C8F28C6730500198755 /* Pods_StepTrackerCompetition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_StepTrackerCompetition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3568C0A136B1BDDC779046E /* Pods-StepTrackerCompetition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StepTrackerCompetition.release.xcconfig"; path = "Pods/Target Support Files/Pods-StepTrackerCompetition/Pods-StepTrackerCompetition.release.xcconfig"; sourceTree = "<group>"; };
+		FA0151B921F931A9008D0D3F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FA06153021D797E300FD89A8 /* TutorialCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCollectionViewController.swift; sourceTree = "<group>"; };
+		FA06153221D7EC7000FD89A8 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		FA06153421D7F78E00FD89A8 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		FA69CA5221F50BF500444352 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		FA69CA5421F50F9B00444352 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FA69CA5621F5182E00444352 /* SetAvatarImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetAvatarImageViewController.swift; sourceTree = "<group>"; };
+		FAD259E621E17D2F0036DBEA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FAE6D2E321EB8990007188A4 /* SignUpWithMailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpWithMailViewController.swift; sourceTree = "<group>"; };
+		FAE6D2E521EE14D7007188A4 /* HealthDataProviderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataProviderViewController.swift; sourceTree = "<group>"; };
+		FAE6D2E921F00024007188A4 /* TopFitnessLeaderboardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopFitnessLeaderboardCell.swift; sourceTree = "<group>"; };
+		FAE6D2EA21F00024007188A4 /* TopFitnessLeaderboardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopFitnessLeaderboardCell.xib; sourceTree = "<group>"; };
+		FAE6D2ED21F00208007188A4 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
+		FAECE1CE21F3F3E400DF7559 /* FirebaseDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDelegate.swift; sourceTree = "<group>"; };
+		FAECE1D021F401E200DF7559 /* StepDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepDataModel.swift; sourceTree = "<group>"; };
+		FAF8A8B221D567250070C191 /* StepTrackerCompetition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepTrackerCompetition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAF8A8B521D567250070C191 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAF8A8B721D567250070C191 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAF8A8BA21D567250070C191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAF8A8BC21D567260070C191 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAF8A8BF21D567260070C191 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAF8A8C121D567260070C191 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF8A8C721D56D180070C191 /* HealthKitDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitDelegate.swift; sourceTree = "<group>"; };
+		FAF8A8CE21D56F7E0070C191 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		FAF8A8D021D56F7E0070C191 /* StepTrackerCompetition.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StepTrackerCompetition.entitlements; sourceTree = "<group>"; };
+		FAFFC1A021F2859B005B7E42 /* FitnessLeaderboardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessLeaderboardCell.swift; sourceTree = "<group>"; };
+		FAFFC1A121F2859B005B7E42 /* FitnessLeaderboardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FitnessLeaderboardCell.xib; sourceTree = "<group>"; };
+		FAFFC1A421F2C1BC005B7E42 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAF8A8AF21D567250070C191 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF8A8CF21D56F7E0070C191 /* HealthKit.framework in Frameworks */,
+				D9BA4C9028C6730500198755 /* Pods_StepTrackerCompetition.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		466687CC92E6D4E356AD33DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80C7AFEED2541E4EE57AF6FB /* Pods-StepTrackerCompetition.debug.xcconfig */,
+				E3568C0A136B1BDDC779046E /* Pods-StepTrackerCompetition.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FAD259E121E04BB60036DBEA /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				FA06153221D7EC7000FD89A8 /* PageCell.swift */,
+				FAE6D2E921F00024007188A4 /* TopFitnessLeaderboardCell.swift */,
+				FAE6D2EA21F00024007188A4 /* TopFitnessLeaderboardCell.xib */,
+				FAFFC1A021F2859B005B7E42 /* FitnessLeaderboardCell.swift */,
+				FAFFC1A121F2859B005B7E42 /* FitnessLeaderboardCell.xib */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		FAF8A8A921D567250070C191 = {
+			isa = PBXGroup;
+			children = (
+				FAF8A8B421D567250070C191 /* StepTrackerCompetition */,
+				FAF8A8B321D567250070C191 /* Products */,
+				FAF8A8CD21D56F7E0070C191 /* Frameworks */,
+				466687CC92E6D4E356AD33DB /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		FAF8A8B321D567250070C191 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAF8A8B221D567250070C191 /* StepTrackerCompetition.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAF8A8B421D567250070C191 /* StepTrackerCompetition */ = {
+			isa = PBXGroup;
+			children = (
+				FAF8A8D021D56F7E0070C191 /* StepTrackerCompetition.entitlements */,
+				FAF8A8C921D56D950070C191 /* Controller */,
+				FAF8A8CB21D56DC00070C191 /* Model */,
+				FAF8A8CA21D56DA50070C191 /* View */,
+				FAF8A8CC21D56DD40070C191 /* Supporting Files */,
+			);
+			path = StepTrackerCompetition;
+			sourceTree = "<group>";
+		};
+		FAF8A8C921D56D950070C191 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAF8A8B521D567250070C191 /* AppDelegate.swift */,
+				FAF8A8B721D567250070C191 /* ViewController.swift */,
+				FA06153021D797E300FD89A8 /* TutorialCollectionViewController.swift */,
+				FAE6D2E321EB8990007188A4 /* SignUpWithMailViewController.swift */,
+				FAE6D2E521EE14D7007188A4 /* HealthDataProviderViewController.swift */,
+				FAE6D2ED21F00208007188A4 /* LeaderboardViewController.swift */,
+				FAFFC1A421F2C1BC005B7E42 /* SignupViewController.swift */,
+				FA69CA5221F50BF500444352 /* SignInViewController.swift */,
+				FA69CA5421F50F9B00444352 /* SettingsViewController.swift */,
+				FA69CA5621F5182E00444352 /* SetAvatarImageViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FAF8A8CA21D56DA50070C191 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAD259E121E04BB60036DBEA /* CustomCells */,
+				FAF8A8BC21D567260070C191 /* Assets.xcassets */,
+				FAF8A8B921D567250070C191 /* Main.storyboard */,
+				FAF8A8BE21D567260070C191 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAF8A8CB21D56DC00070C191 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAF8A8C721D56D180070C191 /* HealthKitDelegate.swift */,
+				FAECE1CE21F3F3E400DF7559 /* FirebaseDelegate.swift */,
+				FA06153421D7F78E00FD89A8 /* Page.swift */,
+				FAECE1D021F401E200DF7559 /* StepDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAF8A8CC21D56DD40070C191 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA0151B921F931A9008D0D3F /* Constants.swift */,
+				FAF8A8C121D567260070C191 /* Info.plist */,
+				FAD259E621E17D2F0036DBEA /* GoogleService-Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAF8A8CD21D56F7E0070C191 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9BA4C8F28C6730500198755 /* Pods_StepTrackerCompetition.framework */,
+				D9BA4C8828C6727F00198755 /* Pods_StepTrackerCompetition.framework */,
+				D9BA4C8428C6726F00198755 /* Pods_StepTrackerCompetition.framework */,
+				FAF8A8CE21D56F7E0070C191 /* HealthKit.framework */,
+				1366E0CC86B31C76FDBAFCCA /* Pods_StepTrackerCompetition.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAF8A8B121D567250070C191 /* StepTrackerCompetition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF8A8C421D567260070C191 /* Build configuration list for PBXNativeTarget "StepTrackerCompetition" */;
+			buildPhases = (
+				7AF9B0E6F90CB879C51AB999 /* [CP] Check Pods Manifest.lock */,
+				FAF8A8AE21D567250070C191 /* Sources */,
+				FAF8A8AF21D567250070C191 /* Frameworks */,
+				FAF8A8B021D567250070C191 /* Resources */,
+				E3E8431EF4110CE44D39CF21 /* [CP] Embed Pods Frameworks */,
+				73BA52A66D4BC29F7B3F1215 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StepTrackerCompetition;
+			productName = StepTrackerCompetition;
+			productReference = FAF8A8B221D567250070C191 /* StepTrackerCompetition.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAF8A8AA21D567250070C191 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Alexander Korte";
+				TargetAttributes = {
+					FAF8A8B121D567250070C191 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = FAF8A8AD21D567250070C191 /* Build configuration list for PBXProject "StepTrackerCompetition" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAF8A8A921D567250070C191;
+			productRefGroup = FAF8A8B321D567250070C191 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAF8A8B121D567250070C191 /* StepTrackerCompetition */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAF8A8B021D567250070C191 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF8A8C021D567260070C191 /* LaunchScreen.storyboard in Resources */,
+				FAF8A8BD21D567260070C191 /* Assets.xcassets in Resources */,
+				FAFFC1A321F2859B005B7E42 /* FitnessLeaderboardCell.xib in Resources */,
+				FAF8A8BB21D567250070C191 /* Main.storyboard in Resources */,
+				FAE6D2EC21F00024007188A4 /* TopFitnessLeaderboardCell.xib in Resources */,
+				FAD259E721E17D2F0036DBEA /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73BA52A66D4BC29F7B3F1215 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StepTrackerCompetition/Pods-StepTrackerCompetition-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StepTrackerCompetition/Pods-StepTrackerCompetition-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AF9B0E6F90CB879C51AB999 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StepTrackerCompetition-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3E8431EF4110CE44D39CF21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StepTrackerCompetition/Pods-StepTrackerCompetition-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/OAuthSwift/OAuthSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OAuthSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StepTrackerCompetition/Pods-StepTrackerCompetition-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAF8A8AE21D567250070C191 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF8A8C821D56D180070C191 /* HealthKitDelegate.swift in Sources */,
+				FAFFC1A221F2859B005B7E42 /* FitnessLeaderboardCell.swift in Sources */,
+				FAECE1CF21F3F3E400DF7559 /* FirebaseDelegate.swift in Sources */,
+				FAF8A8B821D567250070C191 /* ViewController.swift in Sources */,
+				FA06153321D7EC7000FD89A8 /* PageCell.swift in Sources */,
+				FA69CA5721F5182E00444352 /* SetAvatarImageViewController.swift in Sources */,
+				FA06153521D7F78E00FD89A8 /* Page.swift in Sources */,
+				FAE6D2EB21F00024007188A4 /* TopFitnessLeaderboardCell.swift in Sources */,
+				FA69CA5521F50F9B00444352 /* SettingsViewController.swift in Sources */,
+				FAFFC1A521F2C1BC005B7E42 /* SignupViewController.swift in Sources */,
+				FA69CA5321F50BF500444352 /* SignInViewController.swift in Sources */,
+				FAE6D2E421EB8990007188A4 /* SignUpWithMailViewController.swift in Sources */,
+				FAE6D2E621EE14D7007188A4 /* HealthDataProviderViewController.swift in Sources */,
+				FA06153121D797E300FD89A8 /* TutorialCollectionViewController.swift in Sources */,
+				FAF8A8B621D567250070C191 /* AppDelegate.swift in Sources */,
+				FAE6D2EE21F00208007188A4 /* LeaderboardViewController.swift in Sources */,
+				FAECE1D121F401E200DF7559 /* StepDataModel.swift in Sources */,
+				FA0151BA21F931AA008D0D3F /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FAF8A8B921D567250070C191 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAF8A8BA21D567250070C191 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAF8A8BE21D567260070C191 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAF8A8BF21D567260070C191 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAF8A8C221D567260070C191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAF8A8C321D567260070C191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=*]" = arm64;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAF8A8C521D567260070C191 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80C7AFEED2541E4EE57AF6FB /* Pods-StepTrackerCompetition.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StepTrackerCompetition/StepTrackerCompetition.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LNBZTF35A;
+				"EXCLUDED_ARCHS[sdk=*]" = "";
+				INFOPLIST_FILE = "StepTrackerCompetition/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderKorte.StepTrackerCompetition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAF8A8C621D567260070C191 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3568C0A136B1BDDC779046E /* Pods-StepTrackerCompetition.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StepTrackerCompetition/StepTrackerCompetition.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LNBZTF35A;
+				"EXCLUDED_ARCHS[sdk=*]" = "";
+				INFOPLIST_FILE = "StepTrackerCompetition/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexanderKorte.StepTrackerCompetition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAF8A8AD21D567250070C191 /* Build configuration list for PBXProject "StepTrackerCompetition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF8A8C221D567260070C191 /* Debug */,
+				FAF8A8C321D567260070C191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF8A8C421D567260070C191 /* Build configuration list for PBXNativeTarget "StepTrackerCompetition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF8A8C521D567260070C191 /* Debug */,
+				FAF8A8C621D567260070C191 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAF8A8AA21D567250070C191 /* Project object */;
+}
